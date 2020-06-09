@@ -1,0 +1,113 @@
+/* bfbfc2 */
+/* 8793a9 */
+#login {
+    background-color: #f5f5fb;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 58.33%;
+    height: 100vh;
+    z-index: 10;
+    border-radius: 0 0 9.5vh 0;
+    padding: 9vh 6.25%;
+    color: #203263;
+}
+#info {
+    background-color: #4785ef;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding-left: 58.33%;
+    color: #fff;
+}
+
+/* login */
+.login .container {
+    display: block;
+    height: 82vh;
+}
+.login .container .logo {
+    color: #4785ef;
+}
+.login .container .login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    /* height: 34.72%; */
+}
+
+.login .container .login-form form>* {
+    display: block;
+    float: left;
+    width: 48.5%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    margin-top: 3vh;
+    margin-right: 3%;
+}
+.login .container .login-form form>*:nth-child(2n) {
+    margin-right: 0;
+}
+.login .container .login-form form input {
+    color: #203263;
+}
+.login .container .login-form form input::placeholder {
+    color: #bfbfc2;
+}
+.login .container .login-form form div {
+    background-color: #fff;
+}
+.login .container .login-form form div a {
+    display: block;
+}
+.login .container .login-form form button {
+    display: block;
+    width: 100%;
+    background-color: #4785ef;
+    color: #f5f5fb;
+    margin-top: 3vh;
+}
+.login .container .login-form .create-link {
+    display: block;
+    margin-top: 0.8vh;
+}
+.login .container .login-form .create-link a {
+    color: #fd97a4;
+}
+.login .container .login-form .forgot {
+    display: block;
+    color: #8793a9;
+    margin-top: 2vh;
+}
+
+/* info */
+.info .container {
+    position: relative;
+    display: block;
+    height: 100vh;
+    padding-top: 9vh;
+}
+.info .container .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 34.72%;
+    width: 63.4%;
+}
+.info .container .text .title {
+    font-size: 55px;
+    line-height: 60px;
+}
+.info .container .text .description {
+    color: #c4d8fa;
+    margin-top: 2.5vh;
+}
+
+
