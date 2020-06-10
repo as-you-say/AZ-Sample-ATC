@@ -65,7 +65,8 @@
 .contents {
 }
 .contents .container {
-    
+    height: 100vh;
+    overflow: auto;
 }
 .contents .container .header {
     padding: 0 40px;
@@ -198,16 +199,13 @@
 }
 .popup .container {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
     width: 25vw;
-}
-
-.view-myinfo-popup {
 }
 .popup .title {
     color: #fff;
@@ -216,6 +214,7 @@
     font-weight: 700;
     padding: 10px 20px;
 }
+
 form {
     padding: 2vh 20px;
 }
@@ -239,14 +238,7 @@ form input:disabled {
 form input::placeholder {
     color: #bfbfc2;
 }
-.view-myinfo-popup form .view-button {}
-.view-myinfo-popup form .view-button button{
-    display: none;
-}
-.view-myinfo-popup form .modify-button{
-    margin-top: 1.5vh;
-}
-.view-myinfo-popup form .modify-button button {
+form button {
     float: right;
     outline: none;
     border: none;
@@ -256,13 +248,18 @@ form input::placeholder {
     padding: 7px 20px;
     border-radius: 10px;
 }
-.view-myinfo-popup form .modify-button .normal{
+
+.myinfo-popup form .view-button,
+.myinfo-popup form .modify-button {
+    margin-top: 1.5vh;
+}
+.myinfo-popup form .view-button .normal,
+.myinfo-popup form .modify-button .normal{
     border: 1px solid #4785ef;
     background-color: #fff;
     color: #4785ef;
     margin-right: 1.5vh;
 }
-
 .modify-password-popup button.submit{
     float: right;
     outline: none;

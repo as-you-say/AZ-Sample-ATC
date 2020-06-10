@@ -5,6 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="../../fontawesome/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='../../reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./Dashboard.css'>
@@ -26,8 +27,10 @@
         <div class="container">
             <header class="header">
                 <div class="profile">
-                    <i></i>
                     <span class="name">Cloud User Name</span>
+                    <a class="js-view-myinfo" href="javascript:void(0)">
+                        <i class="fas fa-cog"></i>
+                    </a>
                 </div>
             </header>
             <div class="tab">
@@ -108,37 +111,85 @@
             </div>
         </div>
     </section>
+    <div class="popup js-view myinfo-popup">
+        <div class="container">
+            <div class="title">Title: View My Info</div>
+            <form action="./Dashboard.html">
+                <input type="text" placeholder="이메일"  disabled value="user@gmail.com">
+                <input type="text" placeholder="이름"    disabled value="김OO">
+                <input type="text" placeholder="부서"    disabled value="인사팀">
+                <input type="text" placeholder="휴대전화"disabled value="010-0000-0000">
+                <div class="view-button clear">
+                    <button class="submit" type="button">수정</button>
+                    <button class="normal" type="button">탈퇴</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup js-modify myinfo-popup">
+        <div class="container">
+            <div class="title">Title: Modify My Info</div>
+            <form action="./Dashboard.html">
+                <input type="text" placeholder="이메일"  value="user@gmail.com">
+                <input type="text" placeholder="이름"    value="김OO">
+                <input type="text" placeholder="부서"    value="인사팀">
+                <input type="text" placeholder="휴대전화"value="010-0000-0000">
+                <div class="modify-button clear">
+                    <button class="submit" type="button">저장</button>
+                    <button class="normal" type="button">비밀번호 변경</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup js-password modify-password-popup">
+        <div class="container">
+            <div class="title">Title: Modify Password</div>
+            <form class="clear" action="" >
+                <input type="text" value="" placeholder="이전 비밀번호">
+                <input type="text" value="" placeholder="변경할 비밀번호">
+                <input type="text" value="" placeholder="비밀번호 확인">
+                <button class="submit" type="button">저장</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.js-view .submit').addEventListener('click', function(){
+            document.querySelectorAll('.popup').forEach(function(popup){
+                popup.classList.remove('on');
+            });
+            document.querySelector('.js-modify').classList.add('on');
+        })
+        document.querySelector('.js-view .normal').addEventListener('click', function(){
+            document.querySelectorAll('.popup').forEach(function(popup){
+                popup.classList.remove('on');
+            });
+        })
+        document.querySelector('.js-modify .submit').addEventListener('click', function(){
+            document.querySelectorAll('.popup').forEach(function(popup){
+                popup.classList.remove('on');
+            });
+        })
+        document.querySelector('.js-modify .normal').addEventListener('click', function(){
+            document.querySelectorAll('.popup').forEach(function(popup){
+                popup.classList.remove('on');
+            });
+            document.querySelector('.js-password').classList.add('on');
+        })
+        document.querySelector('.js-password .submit').addEventListener('click', function(){
+            document.querySelectorAll('.popup').forEach(function(popup){
+                popup.classList.remove('on');
+            });
+            document.querySelector('.js-modify').classList.add('on');
+        })
+        document.querySelector('.js-view-myinfo').addEventListener('click', function(){
+            document.querySelectorAll('.popup').forEach(function(popup){
+                popup.classList.remove('on');
+            });
+            document.querySelector('.js-view').classList.add('on');
+        })
+    </script>
 </body>
 </html>
 
-<div class="popup view-myinfo-popup">
-    <div class="container">
-        <div class="title">Title: View My Info</div>
-        <form action="./Dashboard.html">
-            <input type="text" placeholder="Email"  value="hello">
-            <input type="text" placeholder="Name"   value="hello">
-            <input type="text" placeholder="Depart" value="hello">
-            <input type="text" placeholder="Phone"  value="hello">
-            <div class="view-button clear">
-                <button class="submit" type="submit">수정</button>
-                <button class="normal">탈퇴</button>
-            </div>
-            <div class="modify-button clear">
-                <button class="submit" type="submit">저장</button>
-                <button class="normal" type="button">비밀번호 변경</button>
-            </div>
-        </form>
-    </div>
-</div>
 
-<div class="popup modify-password-popup on">
-    <div class="container">
-        <div class="title">Title: Modify Password</div>
-        <form class="clear" action="">
-            <input type="text" value="hello" placeholder="이전 비밀번호">
-            <input type="text" value="hello" placeholder="변경할 비밀번호">
-            <input type="text" value="hello" placeholder="비밀번호 확인">
-            <button class="submit" type="submit">저장</button>
-        </form>
-    </div>
-</div>
+
