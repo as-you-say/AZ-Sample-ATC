@@ -1,5 +1,11 @@
 /* bfbfc2 */
 /* 8793a9 */
+
+#app {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 #login {
     background-color: #f5f5fb;
     position: absolute;
@@ -21,12 +27,13 @@
     height: 100vh;
     padding-left: 58.33%;
     color: #fff;
+    overflow: hidden;   
 }
 
 /* login */
 .login .container {
     display: block;
-    height: 82vh;
+    height: 62vh;
 }
 .login .container .logo {
     color: #4785ef;
