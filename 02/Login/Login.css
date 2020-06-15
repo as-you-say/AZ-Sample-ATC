@@ -1,30 +1,219 @@
 #login {
     position: relative;
-    margin-top: 15vh;
-    height: 70vh;
-    margin: 15vh auto;
-    width: 1100px;
+    height: 80vh;
+    margin: 10vh auto;
+    width: 1085px;
+    box-shadow: 10px 12px 24px rgba(30, 37, 55, 0.5);
+    overflow: hidden;
+    font-family: 'Nova Round', 'Noto Sans KR', sans-serif;
 }
 
 input {
     display: block;
+    border: none;
+    border-bottom: 2px solid rgba(78, 96, 155, 0.4);
+    padding: 12px 0px;
+    color: #4e609b;
+    font-family: 'Nova Round', 'Noto Sans KR', sans-serif;
+    width: 100%;
+    outline: none;
+}
+.input-box {
+    position: relative;
 }
 .block {
     float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+.block:nth-child(2n) {
+    margin-right: 0;
 }
 
+/* 왼쪽 설명 */
 .info {
     position: absolute;
     top: 0;
     left: 0;
-    width: 480px;
-    background-color: rgba(4, 2, 14, 0.658);
+    width: 440px;
     height: 100%;
+    text-align: center;
+    color: #fff;
+    background-image: url(./login-bg.jpg);
+    background-size: cover;
 }
+.info .filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 440px;
+    height: 100%;
+    background-color: rgba(30, 37, 55, 0.815);
+}
+.info i {
+    margin-top: 9vh;
+    display: inline-block; 
+    font-size: 70px;
+}
+.info .title {
+    margin-top: 15px;
+    font-size: 34px;
+}
+.info .description {
+    margin-top: 5vh;
+    padding: 0 40px;
+    word-break: break-all;
+}
+.info .cloud-list {
+    padding: 0 40px;
+    margin-top: 60px;
+}
+.info .cloud-list .item {
+    position: relative;
+    padding-left: 70px;
+    font-size: 16px;
+    text-align: left;
+    margin: 30px 0px;
+}
+.info .cloud-list .item:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+
+/* 오른쪽 폼 */
 .form {
     position: absolute;
     top: 0;
-    left: 480px;
-    width: 100%;
+    left: 440px;
+    width: 645px;
     height: 100%;
+    padding-left: 5%;
+}
+.form .tab-menu {
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    font-weight: bold;
+    font-size: 20px;
+    color: #dbdbdb;
+    cursor: pointer;
+}
+.form .tab-menu .menu {
+    
+}
+.form .tab-menu .menu.on {
+    color: rgb(30, 37, 55)
+}
+.form>form {
+    display: none;
+}
+.form>form.on {
+    display: block;
+}
+.form .input-box .block h2 {
+    font-weight: bold;
+    color: #4e609b;
+    margin-bottom: 4vh;
+}
+.form .input-box .block .input-list {
+    padding-right: 30px;
+}
+.form .input-box .block .input-list .input {
+    position: relative;
+    padding: 10px 0;
+    color: rgba(78, 96, 155, 0.4);
+}
+.form .input-box .block .input-list .input input:focus {
+    color: rgba(78, 96, 155, 1);
+    border-bottom: 2px solid rgba(78, 96, 155, 1);
+}
+.form .input-box .block .input-list .input input:focus+i {
+    color: rgba(78, 96, 155, 1);
+}
+.form .input-box .block .input-list .input input::placeholder {
+    color: rgba(78, 96, 155, 0.4);
+}
+.form .input-box .block .input-list .input i {
+    font-size: 26px;
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form .input-box .block .input-list .input i.fa-id-badge {
+    right: 4px;
+}
+.form .input-box .block .input-list .input i.fa-envelope {
+    right: 0px;
+}
+.form .input-box .block .input-list .input .title {
+    color: #4e609b;
+}
+.form .input-box .block .input-list .input .radio {
+    display: inline-block;
+    margin-right: 15px;
+    color: rgba(78, 96, 155, 0.4);
+    cursor: pointer;
+}
+.form .input-box .block .input-list .input .radio>* {
+    float: left;
+}
+.form .input-box .block .input-list .input .radio .icon {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: #fff;
+    border: 1px solid rgba(78, 96, 155, 0.4);
+    margin-right: 8px;
+}
+.form .input-box .block .input-list .input .radio.on {
+    color: #4e609b;
+}
+.form .input-box .block .input-list .input .radio.on .icon{
+    border: 1px solid #4e609b;
+}
+
+.form .input-box .block .input-list .input .radio.on .icon:after {
+    content: '';
+    background-color: #4e609b;
+    width: 13px;
+    height: 13px;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form .input-box .block .input-list .input .title {
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+.form .button {
+    position: absolute;
+    text-align: center;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.form .button button {
+    padding: 7px 40px;
+    border-radius: 5px;
+    border: 1px solid #4e609b;
+    color: #4e609b;
+    background-color: #fff;
+    font-size: 18px;
+}
+.form .button button:hover {
+    border: 1px solid #4e609b;
+    color: #fff;
+    background-color: #4e609b;
 }

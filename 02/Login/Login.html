@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="../../fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='../../reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./Login.css'>
@@ -13,9 +14,15 @@
 <body>
     <section id="login">
         <div class="info">
-            <i class="fas fa-laptop-house"></i>
-            <h2>Title</h2>
-            <p>Description ...</p>
+            <div class="filter">
+                <i class="fas fa-laptop-house"></i>
+                <h2 class="title">ATC Service</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam eos magnam assumenda, voluptatem inventore sint quod excepturi ex hic, nihil doloribus? Qui unde voluptatum voluptas laudantium beatae dicta eum cum.</p>
+                <ul class="cloud-list">
+                    <li class="item">Public Cloud</li>
+                    <li class="item">Private Cloud</li>
+                </ul>
+            </div>
         </div>
         <div class="form">
             <div class="tab-menu">
@@ -23,45 +30,108 @@
                 <span>/</span>
                 <span class="menu login">Login</span>
             </div>
-            <form class="sign-up-form" action="">
+            <form class="sign-up-form on" action="">
                 <div class="input-box clear">
                     <div class="block">
                         <h2>We will need...</h2>
-                        <div class="input">
-                            <input type="text" placeholder="아이디">
-                            <input type="text" placeholder="패스워드">
-                            <input type="text" placeholder="패스워드 확인">
-                            <input type="text" placeholder="이름">
-                            <input type="text" placeholder="이메일">
+                        <div class="input-list">
+                            <div class="input">
+                                <input type="text" placeholder="아이디">
+                                <i class="far fa-id-badge"></i>
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="패스워드">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="패스워드 확인">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="이름">
+                                <i class="far fa-laugh"></i>
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="이메일">
+                                <i class="far fa-envelope"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="block">
-                        <h2>Also, you have to choice...</h2>
-                        <div class="input">
-                            <input type="text" placeholder="가상머신">
-                            <input type="text" placeholder="템플릿">
+                        <h2>And, more ...</h2>
+                        <div class="input-list">
+                            <div class="input">
+                                <input type="text" placeholder="소속">
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="전화번호">
+                            </div>
+                            <div class="input">
+                                <div class="title">사용할 클라우드 종류</div>
+                                <div class="clear radio on">
+                                    <span class="icon"></span>
+                                    <span class="text">사설</span>
+                                </div>
+                                <div class="clear radio">
+                                    <span class="icon"></span>
+                                    <span class="text">공용</span>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="title">공용 저장소 사용여부</div>
+                                <div class="clear radio on">
+                                    <span class="icon"></span>
+                                    <span class="text">사용</span>
+                                </div>
+                                <div class="clear radio">
+                                    <span class="icon"></span>
+                                    <span class="text">미사용</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="button">
-                    <button>가입신청</button>
+                    <button>Sign Up</button>
                 </div>
             </form>
-            <form class="login-form" action="">
+            <form class="login-form " action="">
                 <div class="input-box clear">
                     <div class="block">
                         <h2>We will need...</h2>
-                        <div class="input">
-                            <input type="text" placeholder="아이디">
-                            <input type="text" placeholder="패스워드">
+                        <div class="input-list">
+                            <div class="input">
+                                <input type="text" placeholder="아이디">
+                                <i class="far fa-id-badge"></i>
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="패스워드">
+                                <i class="fas fa-key"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="button">
-                    <button>로그인</button>
+                    <button>Login</button>
                 </div>
             </form>
         </div>
     </section>
 </body>
+<script>
+    document.querySelector('.login').addEventListener('click', function(){
+        document.querySelector('.sign-up').classList.remove('on');
+        document.querySelector('.sign-up-form').classList.remove('on');
+
+        document.querySelector('.login').classList.add('on');
+        document.querySelector('.login-form').classList.add('on');
+    })
+    document.querySelector('.sign-up').addEventListener('click', function(){
+        document.querySelector('.login').classList.remove('on');
+        document.querySelector('.login-form').classList.remove('on');
+        
+        document.querySelector('.sign-up').classList.add('on');
+        document.querySelector('.sign-up-form').classList.add('on');
+    })
+</script>
 </html>
