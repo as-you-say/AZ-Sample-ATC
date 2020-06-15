@@ -154,37 +154,55 @@
     </div>
     <script>
         document.querySelector('.js-view .submit').addEventListener('click', function(){
-            document.querySelectorAll('.popup').forEach(function(popup){
+            var list = document.querySelectorAll('.popup');
+            var size = list.length;
+            for(var i=0; i<size; i++){
+                var popup = list[i];
                 popup.classList.remove('on');
-            });
+            }
             document.querySelector('.js-modify').classList.add('on');
         })
         document.querySelector('.js-view .normal').addEventListener('click', function(){
-            document.querySelectorAll('.popup').forEach(function(popup){
+            var list = document.querySelectorAll('.popup');
+            var size = list.length;
+            for(var i=0; i<size; i++){
+                var popup = list[i];
                 popup.classList.remove('on');
-            });
+            }
         })
         document.querySelector('.js-modify .submit').addEventListener('click', function(){
-            document.querySelectorAll('.popup').forEach(function(popup){
+            var list = document.querySelectorAll('.popup');
+            var size = list.length;
+            for(var i=0; i<size; i++){
+                var popup = list[i];
                 popup.classList.remove('on');
-            });
+            }
         })
         document.querySelector('.js-modify .normal').addEventListener('click', function(){
-            document.querySelectorAll('.popup').forEach(function(popup){
+            var list = document.querySelectorAll('.popup');
+            var size = list.length;
+            for(var i=0; i<size; i++){
+                var popup = list[i];
                 popup.classList.remove('on');
-            });
+            }
             document.querySelector('.js-password').classList.add('on');
         })
         document.querySelector('.js-password .submit').addEventListener('click', function(){
-            document.querySelectorAll('.popup').forEach(function(popup){
+            var list = document.querySelectorAll('.popup');
+            var size = list.length;
+            for(var i=0; i<size; i++){
+                var popup = list[i];
                 popup.classList.remove('on');
-            });
+            }
             document.querySelector('.js-modify').classList.add('on');
         })
         document.querySelector('.js-view-myinfo').addEventListener('click', function(){
-            document.querySelectorAll('.popup').forEach(function(popup){
+            var list = document.querySelectorAll('.popup');
+            var size = list.length;
+            for(var i=0; i<size; i++){
+                var popup = list[i];
                 popup.classList.remove('on');
-            });
+            }
             document.querySelector('.js-view').classList.add('on');
         })
     </script>
