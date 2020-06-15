@@ -1,0 +1,124 @@
+#contents {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-left: 240px;
+}
+#side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: rgb(30, 37, 55);
+  color: #fff;
+  z-index: 10;
+}
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  padding-left: 240px;
+  background-color: #fff;
+}
+
+/* 사이드 메뉴 */
+.side .logo {
+  position: relative;
+  text-align: center;
+  margin-top: 22px;
+}
+.side nav {}
+.side nav .menu-list {
+  margin-top: 20px;
+}
+.side nav .menu-list .item {
+  position: relative;
+  display: block;
+  padding-right: 30px;
+  margin-bottom: 15px;
+}
+.side nav .menu-list .item .link {
+  display: block;
+  color: #fff;
+  padding: 10px 0 10px 68px;
+  font-size: 16px;
+  border-radius: 0 30px 30px 0;
+}
+.side nav .menu-list .item .link+i {
+  position: absolute;
+  font-size: 16px;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+}
+.side nav .menu-list .item.on {}
+.side nav .menu-list .item.on .link {
+  background-color: #fff;
+  color: rgb(30, 37, 55);
+}
+.side nav .menu-list .item.on .link+i {
+  color: rgb(30, 37, 55);
+}
+
+/* 헤더 */
+.header {
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.header .profile {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .profile .name {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(30, 37, 55, 0.7);
+}
+.header .profile i.dropdown {
+  padding: 0 10px;
+  color: rgba(30, 37, 55, 0.5);
+}
+.header .profile i.user {
+  font-size: 28px;
+  vertical-align: middle;
+  color: rgba(30, 37, 55, 0.7);
+}
+
+.container {
+  padding-top: 85px;
+}
+.container .card {
+  height: 85vh;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px 30px;
+}
+.container .card .title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.container .card .table {
+  width: 100%;
+  border-collapse: separate;
+  /* border: 1px solid #dbdbdb; */
+  margin: 0 auto;
+}
+.container .card .table th {
+  /* border-bottom: 1px solid #dbdbdb; */
+  padding: 10px 0;
+  background-color: #edeef2;
+  /* background: linear-gradient(#fff, #f2f2f2); */
+  color: #8b8b8d;
+}
+.container .card .table td {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  text-align: center;
+  color: #8b8b8d;
+}

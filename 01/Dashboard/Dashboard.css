@@ -273,21 +273,29 @@ form button {
 }
 
 @media screen and (max-width:1600px) {
-  .contents .container .tab .scroll {
+  /* .contents .container .tab .scroll {
     height: 50vh;
-  }
+  } */
   .contents .container .tab .title {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 20px;
     color: #203263;
   }
   .contents .container .tab .sub-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
-  .contents .container .tab table.header-table .check {
+  .contents .container .tab table th {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+  .contents .container .tab table td {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+  /* .contents .container .tab table.header-table .check {
     margin-top: 16px;
   }
   .contents .container .tab table .check {
@@ -302,5 +310,5 @@ form button {
     height: 15px;
     border-radius: 3px;
     margin-top: 22px;
-}
+  } */
 }
