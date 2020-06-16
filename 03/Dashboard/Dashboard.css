@@ -140,7 +140,8 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     overflow: auto;
-    background-color: #fff;}
+    background-color: #fff;
+}
 .dashboard .tab.on {
     opacity: 1;
     z-index: 1;}
