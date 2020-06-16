@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>User Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- CSS - Page -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../../fontawesome/css/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./Dashboard.css'>
+
+    <!-- JS - Library -->
+    <script src='./jquery-1.12.4.min.js'></script>
+</head>
+<body>
+  <section id="app">
+    <aside id="side" class="side">
+      <div class="logo">
+          <i class="fas fa-database"></i>
+          <span>ATC</span>
+          <span>Client</span>
+      </div>
+      <ul class="list">
+          <li class="item on"><a class="link" href="#"><i class="fas fa-server"></i>클라우드</a></li>
+          <li class="item"><a class="link" href="#"><i class="fas fa-server"></i>메뉴얼</a></li>
+      </ul>
+    </aside>
+    <section id="dashboard" class="dashboard">
+      <header class="header">
+        <div class="profile">
+          <i class="fas fa-user-circle user"></i>
+          <span>
+            <span class="name">Mr. User</span>
+            <span class="email">user@gmail.com</span>
+          </span>
+          <a href="#">
+            <i class="fas fa-cog setting"></i>
+          </a>
+        </div>
+      </header>
+      <section id="cloud" class="tab on">
+        <h2 class="title">클라우드</h2>
+        <div class="contents">
+          <div class="qna-table">
+            <table class="table">
+              <thead>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>등록일</th>
+                <th>상태</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="manual" class="tab">
+        <h2 class="title">메뉴얼</h2>
+        <div class="contents"></div>
+      </section>
+    </section>
+  </section>
+
+  <div class="popup">
+    <div class="contents">
+      <h2 class="title">개인정보 수정</h2>
+      <div class="form">
+        <form action="">
+          <input type="text" value="atcuser" disabled>
+          <input type="password" placeholder="비밀번호">
+          <input type="password" placeholder="비밀번호 확인">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS - Page -->
+  <script src='./Dashboard.js'></script>
+</body>
+</html>
