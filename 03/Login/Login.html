@@ -8,6 +8,9 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../../fontawesome/css/all.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./Login.css'>
+
+    <script src='./jquery-1.12.4.min.js'></script>
+    <script src='./slider.js'></script>
 </head>
 <body>
     <div class="filter"></div>
@@ -15,7 +18,7 @@
         <div class="container">
             <!-- login -->
             <form id="login" class="login" action="../Dashboard/Dashboard.html">
-                <div class="contents">
+                <div class="contents login-box">
                     <h2>Log In</h2>
                     <p>Ready to discover some amazing opportunities?</p>
                     <div class="input">
@@ -28,6 +31,69 @@
                     </div>
                     <a class="forgot" href="#"><span>Forgot your Password?</span></a>
                     <button class="submit">LOG IN</button>
+                </div>
+                <div class="contents signup-box on">
+                    <h2>Sign Up</h2>
+                    <p>Ready to discover some amazing opportunities?</p>
+                    <div id="page">
+                        <div class="page page-1">
+                            <div class="input">
+                                <input type="text" name="id" placeholder="Id" autocomplete="off">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="input">
+                                <input type="password" name="password" placeholder="Password" autocomplete="off">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="input">
+                                <input type="password" placeholder="Password Confirm" autocomplete="off">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="input">
+                                <input type="password" name="email" placeholder="Email" autocomplete="off">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="page page-2">
+                            <div class="input">
+                                <input type="text" name="name" placeholder="Name" autocomplete="off">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="depart" placeholder="Depart" autocomplete="off">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="phone" placeholder="Phone" autocomplete="off">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        <div class="page page-3">
+                            <div class="input radio-input">
+                                <div class="title">사용할 클라우드 종류</div>
+                                <div class="clear radio on">
+                                    <span class="icon"></span>
+                                    <span class="text">사설</span>
+                                </div>
+                                <div class="clear radio">
+                                    <span class="icon"></span>
+                                    <span class="text">공용</span>
+                                </div>
+                            </div>
+                            <div class="input radio-input">
+                                <div class="title">공용 저장소 사용여부</div>
+                                <div class="clear radio on">
+                                    <span class="icon"></span>
+                                    <span class="text">사용</span>
+                                </div>
+                                <div class="clear radio">
+                                    <span class="icon"></span>
+                                    <span class="text">미사용</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="next submit">Next</button>
                 </div>
             </form>
             <!-- //login -->
@@ -53,9 +119,9 @@
                                 </div>
                             </div>
                             <div class="paging">
-                                <div class="dot"></div>
-                                <div class="dot on"></div>
-                                <div class="dot"></div>
+                                <div class="dot on" onclick="slider.move(0);"></div>
+                                <div class="dot"  onclick="slider.move(1);"></div>
+                                <div class="dot" onclick="slider.move(2);"></div>
                             </div>
                         </section>
                         <!-- //slider-container -->
@@ -66,6 +132,6 @@
         </div>
     </section>
 
-    <script src='./login.js'></script>
+    <script src='./Login.js'></script>
 </body>
 </html>
