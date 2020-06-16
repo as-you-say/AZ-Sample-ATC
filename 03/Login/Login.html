@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../fontawesome/css/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./Login.css'>
+</head>
+<body>
+    <div class="filter"></div>
+    <section id="app">
+        <div class="container">
+            <!-- login -->
+            <form id="login" class="login" action="../Dashboard/Dashboard.html">
+                <div class="contents">
+                    <h2>Log In</h2>
+                    <p>Ready to discover some amazing opportunities?</p>
+                    <div class="input">
+                        <input type="text" name="email" placeholder="Email" autocomplete="off">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="input">
+                        <input type="password" name="password" placeholder="Password" autocomplete="off">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <a class="forgot" href="#"><span>Forgot your Password?</span></a>
+                    <button class="submit">LOG IN</button>
+                </div>
+            </form>
+            <!-- //login -->
+            <!-- slider -->
+            <section id="slider" class="image-slider">
+                <div class="filter">
+                    <div class="contents">
+                        <!-- header -->
+                        <header class="header">
+                            <span class="logo">ATC</span>
+                            <span class="search-account">Don't have an account?</span>
+                            <a href="#" class="sign-up"><span>Sign Up</span></a>
+                        </header>
+                        <!-- //header -->
+                        <!-- slider-container -->
+                        <section class="slider-container">
+                            <div class="list">
+                                <div class="item">
+                                    <div class="description">
+                                        <h2>Hello! ATC Service!</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur amet fugit magni quia, dicta doloribus atque autem minus illo, sed nesciunt cum vero libero enim labore dolores sapiente possimus laborum?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="paging">
+                                <div class="dot"></div>
+                                <div class="dot on"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </section>
+                        <!-- //slider-container -->
+                    </div>
+                </div>
+            </section>
+            <!-- //slider -->
+        </div>
+    </section>
+
+    <script src='./login.js'></script>
+</body>
+</html>
