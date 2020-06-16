@@ -5,6 +5,8 @@ $('.next').on('click', function(){
         var nextDot = $('.dot.on').next();
         $('.dot.on').removeClass('on');
         nextDot.addClass('on');
+    } else {
+        location.href = '../Dashboard/Dashboard.html';
     }
 })
 $('.dot').on('click', function(){

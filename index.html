@@ -8,6 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
     <style>
         .sample {
+            position: relative;
             float: left;
             width: 33.3333%;
             height: 100vh;
@@ -25,21 +26,29 @@
         .sample a:hover {
             background-color: #bebebe;
             transition: all .3s;
-        } 
+        }
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+        }
     </style>
 </head>
 <body class="clear">
     <h1 class="ir-bfc">시안 목록</h1>
     <section class="sample">
-        <h2 class="ir-bfc">시안 1번</h2>
+        <h2>시안 1번</h2>
         <a href="./01/Login/Login.html"></a>
     </section>
     <section class="sample">
-        <h2 class="ir-bfc">시안 2번</h2>
+        <h2>시안 2번</h2>
         <a href="./02/Login/Login.html"></a>
     </section>
     <section class="sample">
-        <h2 class="ir-bfc">시안 3번</h2>
+        <h2>시안 3번</h2>
         <a href="./03/Login/Login.html"></a>
     </section>
 </body>
