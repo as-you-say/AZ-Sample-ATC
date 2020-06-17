@@ -133,9 +133,11 @@ input {
 .form .input-box .block .input-list .input input:focus {
     color: rgba(78, 96, 155, 1);
     border-bottom: 2px solid rgba(78, 96, 155, 1);
+    transition: all .5s;
 }
 .form .input-box .block .input-list .input input:focus+i {
     color: rgba(78, 96, 155, 1);
+    transition: all .5s;
 }
 .form .input-box .block .input-list .input input::placeholder {
     color: rgba(78, 96, 155, 0.4);
@@ -217,10 +219,6 @@ input {
     color: #fff;
     background-color: #4e609b;
 }
-
-
-
-
 
 @media screen and (max-width:1600px) {
   .form .tab-menu{

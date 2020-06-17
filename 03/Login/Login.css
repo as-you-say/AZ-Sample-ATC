@@ -211,7 +211,7 @@ body {
   transform: translateY(-50%);
   right: 190px;
 }
-.image-slider .contents .header .sign-up {
+.image-slider .contents .header .sign {
   position: absolute;
   display: inline-block;
   border: 1px solid #fff;
@@ -222,12 +222,15 @@ body {
   transform: translateY(-50%);
   text-decoration: none;
   color: #fff;
+  z-index: -1;
 }
-.image-slider .contents .header .sign-up span {
+.image-slider .contents .header .sign-in.on {z-index: 1;}
+.image-slider .contents .header .sign-up.on {z-index: 1;}
+.image-slider .contents .header .sign span {
   position: relative;
   padding-bottom: 1px;
 }
-.image-slider .contents .header .sign-up span:after {
+.image-slider .contents .header .sign span:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -238,11 +241,11 @@ body {
   height: 1px;
   opacity: 1;
 }
-.image-slider .contents .header .sign-up:hover {
+.image-slider .contents .header .sign:hover {
   transition: all .5s;
   background-color: #ffffff11;
 }
-.image-slider .contents .header .sign-up:hover span:after {
+.image-slider .contents .header .sign:hover span:after {
   transition: all .5s;
   width: 100%;
 }
